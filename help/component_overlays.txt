@@ -1,0 +1,47 @@
+[suite_header]
+title = Suite Header & Mode Switcher
+description = Switches between GUI1 (Note Tool), Split Dual-View, and GUI2 (JSON Generator). Houses the 1-minute Auto-Save button (header blinks green when saved) and the Component Overlay toggle.
+
+[gui1_menubar]
+title = GUI1 Menu Bar
+description = Project management toolbar: Default Dir, New Project (Ctrl+N), Load Project (Ctrl+O), Save Project (Ctrl+S), Save All (.txt export), Clear Tab, Generate Data (IPC to GUI2), and Help.
+
+[gui1_tabbar]
+title = GUI1 Dynamic Tab Bar
+description = Switch between project tabs, double-click any tab name to rename it, click ✕ to close a tab, or click ＋ to add a new tab.
+
+[gui1_toolbar]
+title = GUI1 Tab Toolbar
+description = Displays the active tab name and window count, with controls to Add Window, Clear All Windows, and toggle Vertical/Horizontal window layout.
+
+[gui1_canvas]
+title = GUI1 Note Windows Canvas
+description = Scrollable workspace holding Window 1..N cards. Each window supports font size/bold/italic/colour formatting, Original Form multi-window viewer, Clear, resize drag handle, and ⋮ context menu.
+
+[gui1_navbar]
+title = GUI1 Window Navigator
+description = Quick navigation bar with Prev/Next and numbered window buttons (1..N) to focus and scroll directly to any window.
+
+[gui2_banner]
+title = GUI2 Top Banner
+description = Displays active Project, Tab, and Target Window alongside GUI1 IPC status, Output History, Reload Configs, and GUI2 Help.
+
+[gui2_tabbar]
+title = GUI2 Schema Tabs
+description = Switches between config/*.json schemas (VP Addresses, Communication, Features, Parameter, Parameters, Sensors, Topics).
+
+[gui2_params]
+title = GUI2 Parameter Selectors
+description = Dynamic form generated from config/<tab>.json fields. Configure columns, counts, and options here, or click View Config JSON to edit the schema directly.
+
+[gui2_canvas_header]
+title = GUI2 Canvas Controls
+description = Shows the current Active Target (windowN) and provides batch actions: Gen windowN, Gen ALL Windows (1-7), and Clear All Windows.
+
+[gui2_window_cards]
+title = GUI2 Window Cards (1-7)
+description = Seven independent JSON buffers (window1–window7). Each card has Original Form, Copy, Gen JSON, Set Target (selects Active Target), Send (dispatches to GUI1), and Clear.
+
+[gui2_bottom_bar]
+title = GUI2 Bottom Dispatch Bar
+description = Displays status messages and provides Live JSON Preview, Send to windowN (dispatches Active Target to GUI1), and Send ALL Windows (1-7).

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@keyframes header-autosave-blink {
+  0%,
+  100% {
+    background-color: #000000;
+  }
+  15%,
+  45%,
+  75% {
+    background-color: #16a34a;
+  }
+  30%,
+  60%,
+  90% {
+    background-color: #064e3b;
+  }
+}
+
+.header-autosave-blink {
+  animation: header-autosave-blink 3.6s ease-in-out;
+}
+
+@keyframes copy-btn-blink {
+  0%,
+  100% {
+    background-color: #f1f5f9;
+    color: #0f172a;
+  }
+  15%,
+  45%,
+  75% {
+    background-color: #16a34a;
+    color: #ffffff;
+  }
+  30%,
+  60%,
+  90% {
+    background-color: #15803d;
+    color: #ffffff;
+  }
+}
+
+.copy-btn-blink {
+  animation: copy-btn-blink 1.4s ease-in-out;
+}

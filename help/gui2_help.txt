@@ -1,0 +1,33 @@
+# GUI2 HELP — DYNAMIC JSON GENERATOR & WINDOW CANVAS (help/gui2_help.txt)
+# Edit this text file directly or via the "Edit .txt File" tab inside the Help modal.
+
+=== Overview ===
+- GUI2 (JSON Generator): Schema-driven JSON builder powered by config/*.json files. Select parameter options on the left pane and populate, preview, inspect, or dispatch JSON across windows 1–7 back to GUI1.
+
+=== Top Banner Buttons ===
+- 📜 History: Opens output generation history (output/generation_history.jsonl) with download buttons for previously dispatched files.
+- 🔄 Reload Configs: Reloads all config/*.json schema definitions from the server.
+- ❓ Help: Opens this text-file-based Help guide (loaded from help/gui2_help.txt) with a built-in .txt editor.
+
+=== Left Parameter Pane ===
+- Schema Tabs: Switch between parameter schemas (VP Addresses, Communication, Features, Parameter, Parameters, Sensors, Topics).
+- Dynamic Fields: Checkboxes, dropdowns, number, and text inputs define the columns, rows, and metadata included when generating JSON.
+- 📄 View Config JSON: Opens the editable config/<tab>.json schema editor so you can add/remove options and click Save & Reload Columns.
+
+=== Windows Canvas Header Buttons ===
+- ⚡ Gen windowN: Generates JSON from the left parameters into the currently selected Active Target window (windowN).
+- ⚡ Gen ALL Windows (1-7): Generates JSON across all 7 windows (window1–window7) in the active tab.
+- 🗑 Clear All Windows: Clears the JSON text in all 7 windows of the active tab.
+
+=== Per-Window Card Buttons (window1–window7) ===
+- 📊 Original Form: Opens the multi-window tabbed tabular viewer (All Windows 1–7 or individual Window 1..7 tabs) with Set Target, Gen, Copy, and Download actions.
+- 📋 Copy: Copies that window's JSON text to the clipboard.
+- ⚡ Gen JSON: Sets that window as the Active Target and immediately generates JSON into it.
+- 🎯 Set Target / 🎯 Target: Marks that window (window1–window7) as the Active Target (highlighted in blue), controlling which window ⚡ Gen windowN, Live JSON Preview, and bottom 💾 Send to windowN operate on.
+- 💾 Send: Sends that specific window's JSON directly to the matching tab and window in GUI1 (auto-generating first if empty).
+- 🗑 Clear: Clears that individual window's JSON buffer.
+
+=== Bottom Action Bar ===
+- 🔍 Live JSON Preview (Pop-up): Previews the live JSON that will be generated for the Active Target window without modifying the card.
+- 💾 Send to windowN: Generates and dispatches the Active Target window's JSON to GUI1 and saves an output file.
+- ⚡ Send ALL Windows (1-7): Generates and dispatches all 7 windows to GUI1 as a batch.

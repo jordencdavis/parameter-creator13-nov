@@ -1,0 +1,32 @@
+# GUI1 HELP — NOTE TOOL WORKSPACE (help/gui1_help.txt)
+# Edit this text file directly or via the "Edit .txt File" tab inside the Help modal.
+
+=== Overview ===
+- GUI1 (Note Tool): Multi-tab structured note and JSON workspace connected to GUI2 via the IPC bridge. Each tab holds resizable note windows (Window 1..N) in Vertical or Horizontal layout, and changed projects auto-save every 1 minute.
+
+=== Top Menu Bar Buttons ===
+- 📁 Default Dir: Sets the default folder under saved_projects/ used by Save Project, Save All, and 1-minute Auto-Save.
+- 🆕 New Project (Ctrl+N): Creates a fresh project with default tabs after choosing a project name and folder.
+- 📂 Load Project (Ctrl+O): Opens a saved .notetool or .json project file from your computer.
+- 💾 Save Project (Ctrl+S): Prompts for directory and file name, then saves the entire project as <name>.notetool (with optional browser download).
+- 💾 Save All: Prompts for directory and base name, then exports every tab as <tab>.txt plus a combined <name>_all_tabs.txt file.
+- 🗑 Clear Tab: Clears text across all windows in the active tab (with confirmation).
+- ⚡ Generate Data: Dispatches the active tab and currently focused window to GUI2 so you can generate structured JSON for it.
+- ❓ Help: Opens this text-file-based Help guide (loaded from help/gui1_help.txt) with a built-in .txt editor.
+
+=== Dynamic Tab Bar & Toolbar ===
+- Tab Click / Double-Click / ✕ / ＋: Click to switch tabs, double-click a tab title to rename it, click ✕ to close a tab, or click ＋ to add a new tab.
+- ＋ Add Window: Appends a new note window to the active tab.
+- 🗑 Clear All Windows: Clears all windows inside the active tab.
+- ⬛ Vertical / ⬜ Horizontal: Switches the active tab layout between stacked vertical windows and side-by-side horizontal windows.
+
+=== Window Header & Navigation Controls ===
+- A+ / A- / B / I / 🎨: Adjusts font size, bold, italic, and text colour for that individual window.
+- 📊 Original Form: Opens the multi-window tabbed viewer showing formatted tables across All Windows or any individual window, with Focus, Generate, Copy, and Download actions.
+- 🗑 Clear: Clears text in that individual window (with confirmation).
+- ⋮ Context Menu: Opens quick tools (Copy All Text, Original Form, Clear Window, Insert Date/Time/Divider, Duplicate Window, Height presets, and Wrap mode).
+- ◀ Prev / Next ▶ / 1..N: Navigates quickly between windows in the active tab.
+
+=== Top Suite Header Controls ===
+- Auto-Save (1m): Automatically saves modified projects every 1 minute (the black top header blinks green when auto-saved). Click anytime to save immediately.
+- 🏷 Overlays (ON/OFF): Toggles click-editable helper overlay descriptions on every UI component across GUI1 and GUI2.

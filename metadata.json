@@ -1,0 +1,6 @@
+{
+  "name": "Note Tool & JSON Generator Studio",
+  "description": "Dual-GUI engineering workspace: Note Making Tool (GUI1) paired with a config-driven Dynamic JSON Data Generator & Window Canvas (GUI2).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
